@@ -10,8 +10,10 @@ Building the example
 Instructions on how to configure and build with CMake::
 
   git clone https://github.com/OpenCMISS-Examples/cellml_growth_law.git
+  cd cellml_growth_law
   mkdir build
-  cmake -DOpenCMISSLibs_DIR=/path/to/opencmisslib/install ../cellml_growth_law
+  cd build
+  cmake -DOpenCMISS_INSTALL_ROOT=/path/to/opencmiss/install ../,
   make  # cmake --build . will also work here and is much more platform agnostic.
 
 Running the example
@@ -19,8 +21,7 @@ Running the example
 
 Explain how the example is run::
 
-  cd build
-  ./src/fortran/cellml_growth_law.F90
+  ./src/fortran/cellml_growth_law
 
 or maybe it is a Python only example::
 
